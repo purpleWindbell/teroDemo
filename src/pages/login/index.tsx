@@ -20,7 +20,7 @@ export default class Login extends Component<{}, LoginState> {
       password: '',
       showPassword: false,
       selectedBrand: 0,
-      brandList: ['品道', '其他品牌1', '其他品牌2'],
+      brandList: ['测试品牌', '其他品牌1', '其他品牌2'],
     }
   }
 
