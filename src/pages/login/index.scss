@@ -1,0 +1,215 @@
+
+/* 品道工作站登录页面样式 - React Native 设计风格 */
+.login-container {
+  flex: 1;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 44px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+.language-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #9ed048;
+  border-radius: 12px;
+}
+
+.login-form {
+  flex: 1;
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.form-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.input-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.phone-icon {
+  background-color: #9ed048;
+  border-radius: 2px;
+}
+
+.lock-icon {
+  background-color: #9ed048;
+  border-radius: 2px;
+}
+
+.brand-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #9ed048;
+  border-radius: 4px;
+  position: relative;
+}
+
+.brand-icon::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 3px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 6px 0 0 #fff, 0 6px 0 #fff, 6px 6px 0 #fff;
+}
+
+.input {
+  flex: 1;
+  font-size: 18px;
+  color: #333;
+  background-color: transparent;
+  height: 28px;
+  border: 0;
+  outline: none;
+}
+
+.input-placeholder {
+  color: #999;
+  font-size: 18px;
+}
+
+.eye-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.eye-close {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.eye-open {
+  background-color: #9ed048;
+  border-radius: 10px;
+}
+
+.picker-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.picker-left-icon {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.picker-content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.picker-text {
+  font-size: 18px;
+  color: #333;
+  flex: 1;
+  padding: 8px 0;
+}
+
+.picker-arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #9ed048;
+  margin-left: 8px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.sms-login {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.sms-text {
+  font-size: 16px;
+  color: #9ed048;
+}
+
+.bottom-section {
+  background-color: #fff;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.login-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #9ed048;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 0;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
