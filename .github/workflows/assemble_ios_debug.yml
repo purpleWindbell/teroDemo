@@ -39,6 +39,16 @@ jobs:
           node-version: 20
           cache: 'pnpm'
       - run: pnpm install
+
+      - name: Build React Native Bundle for Android # 关键步骤：生成 Android 所需的 JS Bundle
+        run: |
+          npx react-native bundle \
+            --platform android \
+            --dev false \
+            --entry-file index.js \
+            --bundle-output android/app/src/main/assets/index.android.bundle \
+            --assets-dest android/app/src/main/res/
+
       - name: Cache Pods
         uses: actions/cache@v2
         with:
