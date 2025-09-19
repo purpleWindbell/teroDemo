@@ -60,6 +60,11 @@ jobs:
           key: ${{ runner.os }}-gradle
           restore-keys: |
             ${{ runner.os }}-gradle
+      - name: Setup Ruby Environment
+        uses: ruby/setup-ruby@v1 # 这是 GitHub 官方维护的 Action，能确保 Ruby 和 Bundler 正确安装
+        with:
+          ruby-version: '3.1' # 建议指定一个已知稳定的 Ruby 版本，3.1 是一个常见选择
+          bundler-cache: true # 关键！启用对 Gemfile.lock 的缓存，可以极大加速后续安装
       - name: Assemble Android ${{ env.BUILD_TYPE }}
         run: |
           sudo apt install -y ruby-bundler
