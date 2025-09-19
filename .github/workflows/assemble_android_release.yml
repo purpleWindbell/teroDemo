@@ -51,8 +51,10 @@ jobs:
           node-version: 20
           cache: 'pnpm'
       - run: pnpm install
-
-      - name: Build React Native Bundle for Android # 关键步骤：生成 Android 所需的 JS Bundle
+      - name: Build React Native Bundle for Android
+        run: |
+          pnpm build:rn --platform android
+      - name: Build React Native Bundle  # 关键步骤：生成 Android 所需的 JS Bundle
         run: |
           npx react-native bundle \
             --platform android \
