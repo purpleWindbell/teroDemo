@@ -69,6 +69,7 @@ jobs:
         run: |
           sudo apt install -y ruby-bundler
           cd android
+          chmod +x gradlew   
           bundle update
           bundle exec fastlane assemble
         env:
